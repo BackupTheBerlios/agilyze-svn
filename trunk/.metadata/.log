@@ -1,0 +1,523 @@
+!SESSION 2006-06-07 12:21:03.451 -----------------------------------------------
+eclipse.buildId=M20060118-1600
+java.version=1.5.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -data D:\pboisver\Desktop\junk\bob -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jdt.ui 4 0 2006-06-07 12:48:37.784
+!MESSAGE Error in JDT Core during reconcile
+!STACK 1
+Java Model Exception: Java Model Status [guide-ide-eclipse does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:468)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:1223)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1792)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1930)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:332)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:233)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:488)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:232)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:218)
+	at org.eclipse.jdt.internal.core.JavaProject.getJavaProjectElementInfo(JavaProject.java:1520)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2426)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:60)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:74)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:26)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:148)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:214)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:79)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:718)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:777)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1081)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:98)
+	at org.eclipse.core.internal.runtime.InternalPlatform.run(InternalPlatform.java:1044)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:783)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:82)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:174)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:120)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:103)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:328)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:170)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2006-06-07 12:48:37.784
+!MESSAGE guide-ide-eclipse does not exist
+!SESSION 2006-06-10 13:47:07.62 ------------------------------------------------
+eclipse.buildId=M20060118-1600
+java.version=1.5.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jdt.ui 4 0 2006-06-10 13:47:34.534
+!MESSAGE Error in JDT Core during reconcile
+!STACK 1
+Java Model Exception: Java Model Status [guide-ide-eclipse does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:468)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:1223)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1792)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1930)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:332)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:233)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:488)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:232)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:218)
+	at org.eclipse.jdt.internal.core.JavaProject.getJavaProjectElementInfo(JavaProject.java:1520)
+	at org.eclipse.jdt.internal.core.JavaProject.newNameLookup(JavaProject.java:2426)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:60)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.<init>(SearchableEnvironment.java:74)
+	at org.eclipse.jdt.internal.core.CancelableNameEnvironment.<init>(CancelableNameEnvironment.java:26)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:148)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:214)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:79)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:718)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:777)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1081)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:98)
+	at org.eclipse.core.internal.runtime.InternalPlatform.run(InternalPlatform.java:1044)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:783)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:82)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.initialReconcile(JavaReconcilingStrategy.java:174)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.initialReconcile(CompositeReconcilingStrategy.java:114)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:120)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:103)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:328)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:170)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2006-06-10 13:47:34.984
+!MESSAGE guide-ide-eclipse does not exist
+!SESSION 2006-06-10 13:53:54.631 -----------------------------------------------
+eclipse.buildId=M20060118-1600
+java.version=1.5.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.polarion.team.svn.core.svnnature 4 0 2006-06-10 13:56:42.102
+!MESSAGE Subversive: 'Get Repository Resource Revision'  operation finished with error
+!SUBENTRY 1 org.polarion.team.svn.core.svnnature 4 0 2006-06-10 13:56:42.102
+!MESSAGE Get repository resource revision operation failed.
+!STACK 0
+org.tigris.subversion.javahl.ClientExceptionEx: URL 'http://svn2.cvsdude.com/pboisver/agilyze/trunk' non-existent in revision '0'
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.createException(JavaHLObjectFactory.java:596)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:567)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1330)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.info2(SVNClientImpl.java:1157)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryContainer.getRevisionImpl(SVNRepositoryContainer.java:100)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryResource.getRevision(SVNRepositoryResource.java:110)
+	at org.polarion.team.svn.ui.operation.GetRemoteResourceRevisionOperation.runImpl(GetRemoteResourceRevisionOperation.java:52)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:52)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:72)
+	at org.polarion.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+
+!ENTRY org.polarion.team.svn.core.svnnature 4 0 2006-06-10 13:56:43.33
+!MESSAGE Subversive: 'Get Repository Resource Revision'  operation finished with error
+!SUBENTRY 1 org.polarion.team.svn.core.svnnature 4 0 2006-06-10 13:56:43.33
+!MESSAGE Get repository resource revision operation failed.
+!STACK 0
+org.tigris.subversion.javahl.ClientExceptionEx: URL 'http://svn2.cvsdude.com/pboisver/agilyze/tags' non-existent in revision '0'
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.createException(JavaHLObjectFactory.java:596)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:567)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1330)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.info2(SVNClientImpl.java:1157)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryContainer.getRevisionImpl(SVNRepositoryContainer.java:100)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryResource.getRevision(SVNRepositoryResource.java:110)
+	at org.polarion.team.svn.ui.operation.GetRemoteResourceRevisionOperation.runImpl(GetRemoteResourceRevisionOperation.java:52)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:52)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:72)
+	at org.polarion.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+
+!ENTRY org.polarion.team.svn.core.svnnature 4 0 2006-06-10 13:56:43.43
+!MESSAGE Subversive: 'Get Repository Resource Revision'  operation finished with error
+!SUBENTRY 1 org.polarion.team.svn.core.svnnature 4 0 2006-06-10 13:56:43.43
+!MESSAGE Get repository resource revision operation failed.
+!STACK 0
+org.tigris.subversion.javahl.ClientExceptionEx: URL 'http://svn2.cvsdude.com/pboisver/agilyze/branches' non-existent in revision '0'
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.createException(JavaHLObjectFactory.java:596)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:567)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1330)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.info2(SVNClientImpl.java:1157)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryContainer.getRevisionImpl(SVNRepositoryContainer.java:100)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryResource.getRevision(SVNRepositoryResource.java:110)
+	at org.polarion.team.svn.ui.operation.GetRemoteResourceRevisionOperation.runImpl(GetRemoteResourceRevisionOperation.java:52)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:52)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:72)
+	at org.polarion.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+
+!ENTRY org.polarion.team.svn.core.svnnature 4 0 2006-06-10 13:56:59.534
+!MESSAGE Subversive: 'Get Repository Folder Children'  operation finished with error
+!SUBENTRY 1 org.polarion.team.svn.core.svnnature 4 0 2006-06-10 13:56:59.534
+!MESSAGE Get repository folder children operation failed.
+!STACK 0
+org.tigris.subversion.javahl.ClientExceptionEx: '/pboisver/agilyze/!svn/bc/0/trunk' path not found: 404 Not Found (http://svn2.cvsdude.com)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.createException(JavaHLObjectFactory.java:596)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:567)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1330)
+	at org.tmatesoft.svn.core.client.SVNClientEx.list(SVNClientEx.java:864)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryContainer.getChildren(SVNRepositoryContainer.java:75)
+	at org.polarion.team.svn.ui.operation.GetRemoteFolderChildrenOperation.runImpl(GetRemoteFolderChildrenOperation.java:51)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:52)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:72)
+	at org.polarion.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+
+!ENTRY org.eclipse.help 4 0 2006-06-10 13:58:38.201
+!MESSAGE Failed to parse Table of Contents file, URL: file:///org.eclipse.wst.xmleditor.doc.user/XMLBuildermap_toc.xml at line: 29, column: 10.
+Element type "topic" must be followed by either attribute specifications, ">" or "/>".
+!STACK 0
+org.xml.sax.SAXParseException: Element type "topic" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:236)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:215)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:386)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:316)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:845)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1693)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:368)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:834)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1242)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:375)
+	at org.eclipse.help.internal.toc.TocFileParser.parse(TocFileParser.java:89)
+	at org.eclipse.help.internal.toc.TocBuilder.buildTocFile(TocBuilder.java:76)
+	at org.eclipse.help.internal.toc.TocBuilder.getTocFile(TocBuilder.java:140)
+	at org.eclipse.help.internal.toc.TocBuilder.buildLink(TocBuilder.java:91)
+	at org.eclipse.help.internal.toc.Link.build(Link.java:34)
+	at org.eclipse.help.internal.toc.TocFileParser.startElement(TocFileParser.java:127)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:533)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:220)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:872)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1693)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:368)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:834)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1242)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:375)
+	at org.eclipse.help.internal.toc.TocFileParser.parse(TocFileParser.java:89)
+	at org.eclipse.help.internal.toc.TocBuilder.buildTocFile(TocBuilder.java:76)
+	at org.eclipse.help.internal.toc.TocFile.build(TocFile.java:111)
+	at org.eclipse.help.internal.toc.TocBuilder.build(TocBuilder.java:58)
+	at org.eclipse.help.internal.toc.TocManager.build(TocManager.java:120)
+	at org.eclipse.help.internal.toc.TocManager.<init>(TocManager.java:47)
+	at org.eclipse.help.internal.HelpPlugin.getTocManager(HelpPlugin.java:118)
+	at org.eclipse.help.internal.search.SearchManager.getIndex(SearchManager.java:48)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:25)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+
+!ENTRY org.eclipse.help 4 0 2006-06-10 13:58:38.201
+!MESSAGE Error loading Table of Contents file /org.eclipse.wst.xmleditor.doc.user/XMLBuildermap_toc.xml.
+!STACK 0
+org.xml.sax.SAXParseException: Element type "topic" must be followed by either attribute specifications, ">" or "/>".
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1269)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:375)
+	at org.eclipse.help.internal.toc.TocFileParser.parse(TocFileParser.java:89)
+	at org.eclipse.help.internal.toc.TocBuilder.buildTocFile(TocBuilder.java:76)
+	at org.eclipse.help.internal.toc.TocBuilder.getTocFile(TocBuilder.java:140)
+	at org.eclipse.help.internal.toc.TocBuilder.buildLink(TocBuilder.java:91)
+	at org.eclipse.help.internal.toc.Link.build(Link.java:34)
+	at org.eclipse.help.internal.toc.TocFileParser.startElement(TocFileParser.java:127)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:533)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:220)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:872)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1693)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:368)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:834)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1242)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:375)
+	at org.eclipse.help.internal.toc.TocFileParser.parse(TocFileParser.java:89)
+	at org.eclipse.help.internal.toc.TocBuilder.buildTocFile(TocBuilder.java:76)
+	at org.eclipse.help.internal.toc.TocFile.build(TocFile.java:111)
+	at org.eclipse.help.internal.toc.TocBuilder.build(TocBuilder.java:58)
+	at org.eclipse.help.internal.toc.TocManager.build(TocManager.java:120)
+	at org.eclipse.help.internal.toc.TocManager.<init>(TocManager.java:47)
+	at org.eclipse.help.internal.HelpPlugin.getTocManager(HelpPlugin.java:118)
+	at org.eclipse.help.internal.search.SearchManager.getIndex(SearchManager.java:48)
+	at org.eclipse.help.internal.search.federated.IndexerJob.run(IndexerJob.java:25)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+
+!ENTRY org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:09:53.188
+!MESSAGE Subversive: 'Share Project'  operation finished with error
+!SUBENTRY 1 org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:09:53.188
+!MESSAGE Share 'webapp' failed.
+!STACK 0
+org.tigris.subversion.javahl.ClientExceptionEx: '/pboisver/agilyze/trunk' path not found: 404 Not Found (http://svn2.cvsdude.com)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.createException(JavaHLObjectFactory.java:596)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:567)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1330)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.mkdir(SVNClientImpl.java:580)
+	at org.polarion.team.svn.core.operation.local.management.ShareProjectOperation.mkdir(ShareProjectOperation.java:175)
+	at org.polarion.team.svn.core.operation.local.management.ShareProjectOperation.doDefaultLayout(ShareProjectOperation.java:121)
+	at org.polarion.team.svn.core.operation.local.management.ShareProjectOperation.runImpl(ShareProjectOperation.java:97)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:52)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:72)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:113)
+
+!ENTRY org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:14.885
+!MESSAGE Subversive: 'Get Repository Resource Revision'  operation finished with error
+!SUBENTRY 1 org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:14.885
+!MESSAGE Get repository resource revision operation failed.
+!STACK 0
+org.tigris.subversion.javahl.ClientExceptionEx: URL 'http://svn2.cvsdude.com/pboisver/agilyze/trunk' non-existent in revision '1'
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.createException(JavaHLObjectFactory.java:596)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:567)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1330)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.info2(SVNClientImpl.java:1157)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryContainer.getRevisionImpl(SVNRepositoryContainer.java:100)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryResource.getRevision(SVNRepositoryResource.java:110)
+	at org.polarion.team.svn.ui.operation.GetRemoteResourceRevisionOperation.runImpl(GetRemoteResourceRevisionOperation.java:52)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:52)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:72)
+	at org.polarion.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+
+!ENTRY org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:14.885
+!MESSAGE Subversive: 'Get Repository Resource Revision'  operation finished with error
+!SUBENTRY 1 org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:14.885
+!MESSAGE Get repository resource revision operation failed.
+!STACK 0
+org.tigris.subversion.javahl.ClientExceptionEx: URL 'http://svn2.cvsdude.com/pboisver/agilyze/tags' non-existent in revision '1'
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.createException(JavaHLObjectFactory.java:596)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:567)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1330)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.info2(SVNClientImpl.java:1157)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryContainer.getRevisionImpl(SVNRepositoryContainer.java:100)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryResource.getRevision(SVNRepositoryResource.java:110)
+	at org.polarion.team.svn.ui.operation.GetRemoteResourceRevisionOperation.runImpl(GetRemoteResourceRevisionOperation.java:52)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:52)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:72)
+	at org.polarion.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+
+!ENTRY org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:14.905
+!MESSAGE Subversive: 'Get Repository Resource Revision'  operation finished with error
+!SUBENTRY 1 org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:14.905
+!MESSAGE Get repository resource revision operation failed.
+!STACK 0
+org.tigris.subversion.javahl.ClientExceptionEx: URL 'http://svn2.cvsdude.com/pboisver/agilyze/branches' non-existent in revision '1'
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.createException(JavaHLObjectFactory.java:596)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:567)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1330)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.info2(SVNClientImpl.java:1157)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryContainer.getRevisionImpl(SVNRepositoryContainer.java:100)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryResource.getRevision(SVNRepositoryResource.java:110)
+	at org.polarion.team.svn.ui.operation.GetRemoteResourceRevisionOperation.runImpl(GetRemoteResourceRevisionOperation.java:52)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:52)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:72)
+	at org.polarion.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+
+!ENTRY org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:30.396
+!MESSAGE Subversive: 'Get Repository Folder Children'  operation finished with error
+!SUBENTRY 1 org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:30.396
+!MESSAGE Get repository folder children operation failed.
+!STACK 0
+org.tigris.subversion.javahl.ClientExceptionEx: '/pboisver/agilyze/!svn/bc/1/trunk' path not found: 404 Not Found (http://svn2.cvsdude.com)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.createException(JavaHLObjectFactory.java:596)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:567)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1330)
+	at org.tmatesoft.svn.core.client.SVNClientEx.list(SVNClientEx.java:864)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryContainer.getChildren(SVNRepositoryContainer.java:75)
+	at org.polarion.team.svn.ui.operation.GetRemoteFolderChildrenOperation.runImpl(GetRemoteFolderChildrenOperation.java:51)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:52)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:72)
+	at org.polarion.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+
+!ENTRY org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:32.836
+!MESSAGE Subversive: 'Get Repository Folder Children'  operation finished with error
+!SUBENTRY 1 org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:32.836
+!MESSAGE Get repository folder children operation failed.
+!STACK 0
+org.tigris.subversion.javahl.ClientExceptionEx: '/pboisver/agilyze/!svn/bc/1/branches' path not found: 404 Not Found (http://svn2.cvsdude.com)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.createException(JavaHLObjectFactory.java:596)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:567)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1330)
+	at org.tmatesoft.svn.core.client.SVNClientEx.list(SVNClientEx.java:864)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryContainer.getChildren(SVNRepositoryContainer.java:75)
+	at org.polarion.team.svn.ui.operation.GetRemoteFolderChildrenOperation.runImpl(GetRemoteFolderChildrenOperation.java:51)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:52)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:72)
+	at org.polarion.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+
+!ENTRY org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:35.286
+!MESSAGE Subversive: 'Get Repository Folder Children'  operation finished with error
+!SUBENTRY 1 org.polarion.team.svn.core.svnnature 4 0 2006-06-10 14:28:35.286
+!MESSAGE Get repository folder children operation failed.
+!STACK 0
+org.tigris.subversion.javahl.ClientExceptionEx: '/pboisver/agilyze/!svn/bc/1/tags' path not found: 404 Not Found (http://svn2.cvsdude.com)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.createException(JavaHLObjectFactory.java:596)
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:567)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1330)
+	at org.tmatesoft.svn.core.client.SVNClientEx.list(SVNClientEx.java:864)
+	at org.polarion.team.svn.core.svnstorage.SVNRepositoryContainer.getChildren(SVNRepositoryContainer.java:75)
+	at org.polarion.team.svn.ui.operation.GetRemoteFolderChildrenOperation.runImpl(GetRemoteFolderChildrenOperation.java:51)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.polarion.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:72)
+	at org.polarion.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:52)
+	at org.polarion.team.svn.core.utility.MonitorUtility.doTask(MonitorUtility.java:82)
+	at org.polarion.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:72)
+	at org.polarion.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+!SESSION 2006-06-13 15:25:02.604 -----------------------------------------------
+eclipse.buildId=M20060118-1600
+java.version=1.5.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2006-06-13 15:25:37.365
+!MESSAGE A workspace crash was detected. The previous session did not exit normally.
+
+!ENTRY org.eclipse.update.core 4 42 2006-06-13 15:50:30.200
+!MESSAGE Network connection problems encountered during search.
+!SUBENTRY 1 org.eclipse.update.core 4 0 2006-06-13 15:50:30.200
+!MESSAGE Unable to access "http://springide.org/updatesite/".
+!STACK 1
+org.eclipse.core.runtime.CoreException[0]: org.xml.sax.SAXException: The XML stream is not a valid default "site.xml" file. The root tag is not site.
+	at org.eclipse.update.core.model.DefaultSiteParser.handleInitialState(DefaultSiteParser.java:365)
+	at org.eclipse.update.core.model.DefaultSiteParser.startElement(DefaultSiteParser.java:170)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:533)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:330)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDispatcher.scanRootElementHook(XMLNSDocumentScannerImpl.java:779)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1794)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:368)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:834)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1242)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:375)
+	at org.eclipse.update.core.model.DefaultSiteParser.parse(DefaultSiteParser.java:126)
+	at org.eclipse.update.core.model.SiteModelFactory.parseSite(SiteModelFactory.java:78)
+	at org.eclipse.update.internal.core.SiteURLFactory.createSite(SiteURLFactory.java:78)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:330)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:322)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:294)
+	at org.eclipse.update.internal.core.InternalSiteManager.attemptCreateSite(InternalSiteManager.java:218)
+	at org.eclipse.update.internal.core.InternalSiteManager.getSite(InternalSiteManager.java:159)
+	at org.eclipse.update.core.SiteManager.getSite(SiteManager.java:78)
+	at org.eclipse.update.search.UpdateSearchRequest.searchOneSite(UpdateSearchRequest.java:345)
+	at org.eclipse.update.search.UpdateSearchRequest.performSearch(UpdateSearchRequest.java:273)
+	at org.eclipse.update.ui.UpdateJob.runSearchForNew(UpdateJob.java:177)
+	at org.eclipse.update.ui.UpdateJob.run(UpdateJob.java:165)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+!SUBENTRY 2 org.eclipse.update.core 4 0 2006-06-13 15:50:30.200
+!MESSAGE Error parsing site stream. [The XML stream is not a valid default "site.xml" file. The root tag is not site.]
+!STACK 0
+org.xml.sax.SAXException: The XML stream is not a valid default "site.xml" file. The root tag is not site.
+	at org.eclipse.update.core.model.DefaultSiteParser.handleInitialState(DefaultSiteParser.java:365)
+	at org.eclipse.update.core.model.DefaultSiteParser.startElement(DefaultSiteParser.java:170)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:533)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:330)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDispatcher.scanRootElementHook(XMLNSDocumentScannerImpl.java:779)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1794)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:368)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:834)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1242)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:375)
+	at org.eclipse.update.core.model.DefaultSiteParser.parse(DefaultSiteParser.java:126)
+	at org.eclipse.update.core.model.SiteModelFactory.parseSite(SiteModelFactory.java:78)
+	at org.eclipse.update.internal.core.SiteURLFactory.createSite(SiteURLFactory.java:78)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:330)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:322)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:294)
+	at org.eclipse.update.internal.core.InternalSiteManager.attemptCreateSite(InternalSiteManager.java:218)
+	at org.eclipse.update.internal.core.InternalSiteManager.getSite(InternalSiteManager.java:159)
+	at org.eclipse.update.core.SiteManager.getSite(SiteManager.java:78)
+	at org.eclipse.update.search.UpdateSearchRequest.searchOneSite(UpdateSearchRequest.java:345)
+	at org.eclipse.update.search.UpdateSearchRequest.performSearch(UpdateSearchRequest.java:273)
+	at org.eclipse.update.ui.UpdateJob.runSearchForNew(UpdateJob.java:177)
+	at org.eclipse.update.ui.UpdateJob.run(UpdateJob.java:165)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
+!SUBENTRY 2 org.eclipse.update.core 4 0 2006-06-13 15:50:30.200
+!MESSAGE Error parsing site stream. [The XML stream is not a valid default "site.xml" file. The root tag is not site.]
+!STACK 0
+org.xml.sax.SAXException: The XML stream is not a valid default "site.xml" file. The root tag is not site.
+	at org.eclipse.update.core.model.DefaultSiteParser.handleInitialState(DefaultSiteParser.java:365)
+	at org.eclipse.update.core.model.DefaultSiteParser.startElement(DefaultSiteParser.java:170)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:533)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:330)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDispatcher.scanRootElementHook(XMLNSDocumentScannerImpl.java:779)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1794)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:368)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:834)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1242)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:375)
+	at org.eclipse.update.core.model.DefaultSiteParser.parse(DefaultSiteParser.java:126)
+	at org.eclipse.update.core.model.SiteModelFactory.parseSite(SiteModelFactory.java:78)
+	at org.eclipse.update.internal.core.SiteURLFactory.createSite(SiteURLFactory.java:78)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:330)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:322)
+	at org.eclipse.update.internal.core.InternalSiteManager.createSite(InternalSiteManager.java:294)
+	at org.eclipse.update.internal.core.InternalSiteManager.attemptCreateSite(InternalSiteManager.java:218)
+	at org.eclipse.update.internal.core.InternalSiteManager.getSite(InternalSiteManager.java:159)
+	at org.eclipse.update.core.SiteManager.getSite(SiteManager.java:78)
+	at org.eclipse.update.search.UpdateSearchRequest.searchOneSite(UpdateSearchRequest.java:345)
+	at org.eclipse.update.search.UpdateSearchRequest.performSearch(UpdateSearchRequest.java:273)
+	at org.eclipse.update.ui.UpdateJob.runSearchForNew(UpdateJob.java:177)
+	at org.eclipse.update.ui.UpdateJob.run(UpdateJob.java:165)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:76)
