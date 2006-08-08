@@ -1,12 +1,12 @@
 <?xml version="1.0"?><project>
   <parent>
-    <artifactId>guide-ide-eclipse</artifactId>
+    <artifactId>agilyze</artifactId>
     <groupId>guide.ide.eclipse</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>guide.ide.eclipse.core</groupId>
-  <artifactId>guide-ide-eclipse-core</artifactId>
+  <artifactId>agilyze-core</artifactId>
   <name>Maven Quick Start Archetype</name>
   <version>1.0-SNAPSHOT</version>
   <url>http://maven.apache.org</url>

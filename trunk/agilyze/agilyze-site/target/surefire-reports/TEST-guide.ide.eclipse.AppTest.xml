@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" skipped="0" tests="1" time="0.02" failures="0" name="guide.ide.eclipse.module1.AppTest">
+<testsuite errors="0" skipped="0" tests="1" time="0.133" failures="0" name="guide.ide.eclipse.AppTest">
   <properties>
     <property value="Java(TM) 2 Runtime Environment, Standard Edition" name="java.runtime.name"/>
     <property value="c:\dev\java\jdk1.5.0_05\jre\bin" name="sun.boot.library.path"/>
@@ -12,10 +12,10 @@
     <property value="US" name="user.country"/>
     <property value="Service Pack 2" name="sun.os.patch.level"/>
     <property value="Java Virtual Machine Specification" name="java.vm.specification.name"/>
-    <property value="D:\pboisver\Desktop\junk\bob\guide-ide-eclipse\guide-ide-eclipse-module1" name="user.dir"/>
+    <property value="D:\pboisver\Desktop\junk\bob\agilyze\agilyze-site" name="user.dir"/>
     <property value="1.5.0_05-b05" name="java.runtime.version"/>
     <property value="sun.awt.Win32GraphicsEnvironment" name="java.awt.graphicsenv"/>
-    <property value="D:\pboisver\Desktop\junk\bob\guide-ide-eclipse\guide-ide-eclipse-module1" name="basedir"/>
+    <property value="D:\pboisver\Desktop\junk\bob\agilyze\agilyze-site" name="basedir"/>
     <property value="c:\dev\java\jdk1.5.0_05\jre\lib\endorsed" name="java.endorsed.dirs"/>
     <property value="x86" name="os.arch"/>
     <property value="C:\DOCUME~1\pboisver\LOCALS~1\Temp\" name="java.io.tmpdir"/>
@@ -56,5 +56,5 @@
     <property value="windows" name="sun.desktop"/>
     <property value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" name="sun.cpu.isalist"/>
   </properties>
-  <testcase time="0" name="testApp"/>
+  <testcase time="0.031" name="testApp"/>
 </testsuite>

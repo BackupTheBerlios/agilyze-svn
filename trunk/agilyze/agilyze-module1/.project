@@ -1,8 +1,8 @@
 <projectDescription>
-  <name>guide-ide-eclipse-module1</name>
+  <name>agilyze-module1</name>
   <comment/>
   <projects>
-    <project>guide-ide-eclipse-core</project>
+    <project>agilyze-core</project>
   </projects>
   <buildSpec>
     <buildCommand>

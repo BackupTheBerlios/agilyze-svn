@@ -12,10 +12,10 @@
     <property value="US" name="user.country"/>
     <property value="Service Pack 2" name="sun.os.patch.level"/>
     <property value="Java Virtual Machine Specification" name="java.vm.specification.name"/>
-    <property value="D:\pboisver\Desktop\junk\bob\guide-ide-eclipse\guide-ide-eclipse-core" name="user.dir"/>
+    <property value="D:\pboisver\Desktop\junk\bob\agilyze\agilyze-core" name="user.dir"/>
     <property value="1.5.0_05-b05" name="java.runtime.version"/>
     <property value="sun.awt.Win32GraphicsEnvironment" name="java.awt.graphicsenv"/>
-    <property value="D:\pboisver\Desktop\junk\bob\guide-ide-eclipse\guide-ide-eclipse-core" name="basedir"/>
+    <property value="D:\pboisver\Desktop\junk\bob\agilyze\agilyze-core" name="basedir"/>
     <property value="c:\dev\java\jdk1.5.0_05\jre\lib\endorsed" name="java.endorsed.dirs"/>
     <property value="x86" name="os.arch"/>
     <property value="C:\DOCUME~1\pboisver\LOCALS~1\Temp\" name="java.io.tmpdir"/>
