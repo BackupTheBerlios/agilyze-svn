@@ -31,6 +31,9 @@
 	<bean id="contactUsServiceImpl"
 		class="edu.umich.med.michr.hb2.websvcs.ContactUsServiceImpl" />
 
+	<bean id="statusServiceImpl"
+		class="edu.umich.med.michr.hb2.websvcs.StatusServiceImpl" />
+
 	<!-- Aegis data binding -->
 	<bean id="aegisBean"
 		class="org.apache.cxf.aegis.databinding.AegisDatabinding"
@@ -57,6 +60,14 @@
 	<jaxws:endpoint id="contactUsService"
 		implementorClass="edu.umich.med.michr.hb2.websvcs.ContactUsServiceImpl"
 		implementor="#contactUsServiceImpl" address="/ContactUs">
+		<jaxws:serviceFactory>
+			<ref bean="jaxws-and-aegis-service-factory" />
+		</jaxws:serviceFactory>
+	</jaxws:endpoint>
+
+	<jaxws:endpoint id="statusService"
+		implementorClass="edu.umich.med.michr.hb2.websvcs.StatusServiceImpl"
+		implementor="#statusServiceImpl" address="/Status">
 		<jaxws:serviceFactory>
 			<ref bean="jaxws-and-aegis-service-factory" />
 		</jaxws:serviceFactory>

@@ -11,10 +11,10 @@ import javax.jws.WebService;
  *
  */
 
-@WebService
+@WebService(name = "Status")
 public interface StatusService {
 
-	@WebResult (name = "status")
+	@WebResult(name = "status")
 	Status getStatus();
 
 }

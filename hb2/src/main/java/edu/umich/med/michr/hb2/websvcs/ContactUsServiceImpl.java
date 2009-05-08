@@ -17,7 +17,7 @@ public final class ContactUsServiceImpl implements ContactUsService {
         messages.add(new Message(
                 "Dardy", "Chen", "dardy.chen@xyz.com", "I want my money back"));
         messages.add(new Message(
-                "Bob", "Ted", "b.c@xyz.com", "Good Stuff"));
+                "Bob", "Carol", "b.c@xyz.com", "Good Stuff"));
         return messages;
     }
 
