@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.umich.med.michr.hb2</groupId>
-	<artifactId>hb2</artifactId>
+	<artifactId>hb2-webservice</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
-	<name>hb2</name>
+	<name>hb2-webservice</name>
 	<profiles>
 		<profile>
 			<id>cxf2_0</id>
@@ -136,6 +136,11 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<parent>
+		<artifactId>hb2</artifactId>
+		<groupId>edu.umich.med.michr.hb2</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
 	<build>
 		<plugins>
 			<plugin>
