@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.umich.med.michr.hb2</groupId>
@@ -7,6 +6,27 @@
 	<packaging>war</packaging>
 	<version>1.0</version>
 	<name>hb2</name>
+	<profiles>
+		<profile>
+			<id>cxf2_0</id>
+			<activation>
+			</activation>
+			<properties>
+				<cxf.version>2.0.11</cxf.version>
+					<spring.version>2.5.5</spring.version>
+			</properties>
+		</profile>
+		<profile>
+			<id>cxf2_1</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+				<properties>
+					<cxf.version>2.1.1</cxf.version>
+					<spring.version>2.5.5</spring.version>
+				</properties>
+		</profile>
+	</profiles>
 	<repositories>
 		<!-- for jaxb-impl -->
 		<repository>
@@ -15,12 +35,11 @@
 			<layout>legacy</layout>
 		</repository>
 	</repositories>
-	<properties>
-		<cxf.version>2.1.1</cxf.version>
-		<spring.version>2.5.5</spring.version>
-	</properties>
 	<dependencies>
-		<!-- Depending on your requirements you may need more or fewer modules from cxf -->
+		<!--
+			Depending on your requirements you may need more or fewer modules
+			from cxf
+		-->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring</artifactId>
@@ -47,18 +66,14 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-<!-- Only needed if you make the webapp in Mr. Wheelers article
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.1.2</version>
-		</dependency>
-		<dependency>
-			<groupId>taglibs</groupId>
-			<artifactId>standard</artifactId>
-			<version>1.1.2</version>
-		</dependency>
- -->
+		<!--
+			Only needed if you make the webapp in Mr. Wheelers article
+			<dependency> <groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId> <version>1.1.2</version> </dependency>
+			<dependency> <groupId>taglibs</groupId>
+			<artifactId>standard</artifactId> <version>1.1.2</version>
+			</dependency>
+		-->
 		<dependency>
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-core</artifactId>
