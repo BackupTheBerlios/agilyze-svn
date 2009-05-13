@@ -12,7 +12,7 @@
 			</activation>
 			<properties>
 				<cxf.version>2.0.11</cxf.version>
-					<spring.version>2.5.5</spring.version>
+				<spring.version>2.5.5</spring.version>
 			</properties>
 		</profile>
 		<profile>
@@ -20,10 +20,10 @@
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
-				<properties>
-					<cxf.version>2.1.1</cxf.version>
-					<spring.version>2.5.5</spring.version>
-				</properties>
+			<properties>
+				<cxf.version>2.1.1</cxf.version>
+				<spring.version>2.5.5</spring.version>
+			</properties>
 		</profile>
 	</profiles>
 	<repositories>
@@ -155,7 +155,37 @@
 				<artifactId>maven-jetty-plugin</artifactId>
 				<version>6.1.8</version>
 				<configuration>
-					<contextPath>${artifactId}</contextPath>
+					<contextPath>${parent.artifactId}</contextPath>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.twdata.maven</groupId>
+				<artifactId>maven-itblast-plugin</artifactId>
+				<!--                <version>0.5</version>-->
+				<executions>
+					<execution>
+						<phase>integration-test</phase>
+						<goals>
+							<goal>execute</goal>
+						</goals>
+						<configuration>
+							<httpPort>8080</httpPort>
+							<containers>tomcat6x</containers>
+							<functionalTestPattern>it/**</functionalTestPattern>
+<!--							<wait>true</wait>-->
+<!--							<containers>tomcat5x,jetty6x,jboss42x,resin3x</containers>-->
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<!--                        <exclude>**/**</exclude>-->
+						<exclude>it/**</exclude>
+						<exclude>**/*$*</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
 		</plugins>
