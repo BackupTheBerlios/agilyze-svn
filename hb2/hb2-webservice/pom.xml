@@ -170,7 +170,7 @@
 						</goals>
 						<configuration>
 							<httpPort>8080</httpPort>
-							<containers>tomcat6x</containers>
+<!--							<containers>jetty6x</containers>-->
 							<functionalTestPattern>it/**</functionalTestPattern>
 <!--							<wait>true</wait>-->
 <!--							<containers>tomcat5x,jetty6x,jboss42x,resin3x</containers>-->
