@@ -1,4 +1,4 @@
-package edu.umich.med.michr.hb2.websvcs;
+package it.edu.umich.med.michr.hb2.websvcs;
 
 import java.util.List;
 
@@ -18,6 +18,7 @@ public class ContactUsServiceIntegrationTest extends TestCase {
 		ClientProxyFactoryBean factory = new ClientProxyFactoryBean();
 		factory.setServiceClass(ContactUsService.class);
 		factory.setAddress("http://localhost:8080/hb2/ws/ContactUs/");
+//		factory.setAddress("http://localhost:8080/hb2-webservice-0.0.1-SNAPSHOT/ws/ContactUs/");
 		ContactUsService client = (ContactUsService) factory.create();
 
 		String response = client.getMessagesAsString();
@@ -27,7 +28,7 @@ public class ContactUsServiceIntegrationTest extends TestCase {
 	}
 
 	public void testGetMessage() {
-		//lookup client
+//		lookup client
 	    ClassPathXmlApplicationContext context
         = new ClassPathXmlApplicationContext(new String[] {"spring-test.xml"});
 
