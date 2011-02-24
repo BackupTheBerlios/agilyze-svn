@@ -1,0 +1,64 @@
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<display-name>web-service.orig</display-name>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+		classpath:app-context.xml
+<!--            classpath:hr-spring.xml;-->
+<!--            classpath:spring-cosign-base.xml;-->
+<!--            classpath:spring-cosign.xml;-->
+<!--            classpath:appaccess-filter-spring.xml;-->
+        </param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<!-- <listener> -->
+	<!-- <listener-class>edu.umich.umms.config.SpringConfigServiceInitListener</listener-class> -->
+	<!-- </listener> -->
+
+	<servlet>
+		<servlet-name>profile</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>profile</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+
+
+	<!--Cosign and AppAccess filters -->
+	<!-- <filter> -->
+	<!-- <filter-name>Cosign Authentication Filter</filter-name> -->
+	<!-- <filter-class>edu.umich.authentication.cosign.filter.CosignAuthenticationFilter</filter-class> -->
+	<!-- </filter> -->
+	<!-- <filter-mapping> -->
+	<!-- <filter-name>Cosign Authentication Filter</filter-name> -->
+	<!-- <url-pattern>/*</url-pattern> -->
+	<!-- </filter-mapping> -->
+<!---->
+	<!-- <filter> -->
+	<!-- <filter-name>AppAccess Authorization Filter</filter-name> -->
+	<!-- <filter-class>edu.umich.umms.appaccess.filter.AppAccessAuthorizationFilter</filter-class> -->
+	<!-- </filter> -->
+	<!-- <filter-mapping> -->
+	<!-- <filter-name>AppAccess Authorization Filter</filter-name> -->
+	<!-- <url-pattern>/*</url-pattern> -->
+	<!-- </filter-mapping> -->
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
