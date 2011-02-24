@@ -10,9 +10,6 @@
   <artifactId>profile-web-service</artifactId>
   <packaging>war</packaging>
   <version>0.1-SNAPSHOT</version>
-  <name>umms-profile-web-service</name>
-  <url>http://maven.apache.org</url>
-
 
   <dependencies>
     <dependency>
