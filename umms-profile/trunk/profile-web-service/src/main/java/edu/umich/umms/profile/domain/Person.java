@@ -6,7 +6,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Version;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 @Entity
 @XmlRootElement
@@ -18,7 +21,7 @@ public class Person implements Serializable {
   private String lastName;
   private String username;
   private String password;
-  private int roleLevel;
+  private String roleLevel;
 
   private Integer version;
 
@@ -27,7 +30,7 @@ public class Person implements Serializable {
   }
 
   public Person(String firstName, String lastName, String username,
-      String password, int roleLevel) {
+      String password, String roleLevel) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.username = username;
@@ -35,8 +38,7 @@ public class Person implements Serializable {
     this.roleLevel = roleLevel;
   }
 
-  @Id
-  @GeneratedValue
+  @XmlTransient
   public Long getId() {
     return id;
   }
@@ -61,6 +63,10 @@ public class Person implements Serializable {
     this.lastName = lastName;
   }
 
+  public String getFullName() {
+	return getLastName() + ", " + getFirstName();
+}
+
   public String getUsername() {
     return username;
   }
@@ -77,11 +83,11 @@ public class Person implements Serializable {
     this.password = password;
   }
 
-  public int getRoleLevel() {
+  public String getRoleLevel() {
     return roleLevel;
   }
 
-  public void setRoleLevel(int roleLevel) {
+  public void setRoleLevel(String roleLevel) {
     this.roleLevel = roleLevel;
   }
 

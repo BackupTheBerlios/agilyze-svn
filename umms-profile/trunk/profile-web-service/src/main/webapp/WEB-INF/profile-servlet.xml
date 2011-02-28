@@ -2,18 +2,22 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:p="http://www.springframework.org/schema/p" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:oxm="http://www.springframework.org/schema/oxm"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
-
 	<context:component-scan base-package="edu.umich.umms.profile.controller" />
+
+	<context:annotation-config/>
 
 	<mvc:annotation-driven />
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver"
-		p:defaultContentType="application/xml" p:favorParameter="true">
+		p:defaultContentType="application/xml" p:favorParameter="true"
+		p:ignoreAcceptHeader="true" p:favorPathExtension="true">
 		<property name="mediaTypes">
 			<map>
 				<entry key="html" value="text/html" />
@@ -33,17 +37,35 @@
 		<property name="defaultViews">
 			<list>
 				<bean
-					class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" />
-				<bean class="org.springframework.web.servlet.view.xml.MarshallingView">
-					<property name="marshaller">
-<!--						<bean class="org.springframework.oxm.jaxb.Jaxb2Marshaller"-->
-<!--							p:classesToBeBound="edu.umich.umms.profile.domain.Person" />-->
-						<bean class="org.springframework.oxm.xstream.XStreamMarshaller"
-							p:annotatedClass="edu.umich.umms.profile.domain.Person" />
-					</property>
+					class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"
+					p:objectMapper-ref="jaxbJacksonObjectMapper">
 				</bean>
+				<bean class="org.springframework.web.servlet.view.xml.MarshallingView"
+					p:marshaller-ref="marshallerJaxb" />
 			</list>
 		</property>
 	</bean>
+
+	<bean id="jaxbJacksonObjectMapper" class="org.codehaus.jackson.map.ObjectMapper" />
+
+	<bean id="jaxbAnnotationInspector" class="org.codehaus.jackson.xc.JaxbAnnotationIntrospector" />
+
+	<bean id="jaxbSerializationConfig" factory-bean="jaxbJacksonObjectMapper"
+		factory-method="getSerializationConfig">
+		<property name="annotationIntrospector" ref="jaxbAnnotationInspector" />
+	</bean>
+
+	<bean id="jaxbDeserializationConfig" factory-bean="jaxbJacksonObjectMapper"
+		factory-method="getDeserializationConfig">
+		<property name="annotationIntrospector" ref="jaxbAnnotationInspector" />
+	</bean>
+
+	<!-- <bean id="jaxbJacksonObjectMapper" class="edu.umich.umms.profile.marshalling.JaxbJacksonObjectMapper"/> -->
+
+	<oxm:jaxb2-marshaller id="marshallerJaxb">
+		<oxm:class-to-be-bound name="edu.umich.umms.profile.domain.Person" />
+		<oxm:class-to-be-bound name="edu.umich.umms.profile.domain.People" />
+	</oxm:jaxb2-marshaller>
+
 
 </beans>

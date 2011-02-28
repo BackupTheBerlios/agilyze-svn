@@ -7,7 +7,8 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-		classpath:app-context.xml
+		classpath:app-context.xml;
+		classpath:hr-spring.xml
 <!--            classpath:hr-spring.xml;-->
 <!--            classpath:spring-cosign-base.xml;-->
 <!--            classpath:spring-cosign.xml;-->

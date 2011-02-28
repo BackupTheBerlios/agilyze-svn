@@ -17,7 +17,9 @@ public class PersonDaoMock implements PersonDao {
 	@Override
 	public Person getPerson(Long personId) {
 		// TODO Auto-generated method stub
-		Person person = new Person("bob", String.format("Unit%d", personId), "carol", "alice", 42);
+
+
+		Person person = new Person("bob", String.format("Unit%d", personId), "carol", "alice", "42");
 		person.setId(personId);
 		return person;
 	}
