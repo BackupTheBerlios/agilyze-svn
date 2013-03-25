@@ -11,7 +11,7 @@
     <module>alice</module>
   </modules>
   <scm>
-  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob</developerConnection>
+  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/trunk</developerConnection>
   </scm>
   <properties>
   	<too>too much</too>
