@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>a2ww.com</groupId>
   <artifactId>bob</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
   	<module>ted</module>
@@ -11,7 +11,7 @@
     <module>alice</module>
   </modules>
   <scm>
-  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/tags/bob-0.0.1</developerConnection>
+  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob</developerConnection>
   </scm>
   <properties>
   	<too>too much</too>
