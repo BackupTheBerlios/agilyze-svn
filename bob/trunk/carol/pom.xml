@@ -6,5 +6,10 @@
     <version>0.0.1</version>
   </parent>
   <artifactId>carol</artifactId>
+  <version>0.0.1</version>
   <packaging>war</packaging>
+
+  <scm>
+    <developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/tags/carol-0.0.1</developerConnection>
+  </scm>
 </project>
