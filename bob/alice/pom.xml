@@ -7,4 +7,7 @@
   </parent>
   <artifactId>alice</artifactId>
   <packaging>pom</packaging>
+  <scm>
+  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/alice</developerConnection>
+  </scm>
 </project>
