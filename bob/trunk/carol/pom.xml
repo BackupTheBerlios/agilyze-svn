@@ -6,6 +6,5 @@
     <version>0.0.1</version>
   </parent>
   <artifactId>carol</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
   <packaging>war</packaging>
 </project>
