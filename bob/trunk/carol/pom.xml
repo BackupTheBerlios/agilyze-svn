@@ -7,8 +7,8 @@
   </parent>
   <artifactId>carol</artifactId>
   <packaging>war</packaging>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.2</version>
   <scm>
-  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/trunk/carol</developerConnection>
+  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/tags/carol-0.0.2/carol</developerConnection>
   </scm>
 </project>
