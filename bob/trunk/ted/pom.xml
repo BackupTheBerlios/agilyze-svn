@@ -6,9 +6,8 @@
     <version>1.0.7</version>
   </parent>
   <artifactId>ted</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.4-SNAPSHOT</version>
   <scm>
-  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/tags/ted-0.0.3</developerConnection>
-  	<tag>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/tags/ted</tag>
+  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/trunk/ted</developerConnection>
   </scm>
 </project>
