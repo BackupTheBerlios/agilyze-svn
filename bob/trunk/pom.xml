@@ -16,9 +16,9 @@
   <properties>
   	<too>too much</too>
   </properties>
-  <parent>
-  	<groupId>edu.umich.umms</groupId>
-  	<artifactId>umms</artifactId>
-  	<version>1.0.7</version>
-  </parent>
+<!--   <parent> -->
+<!--   	<groupId>edu.umich.umms</groupId> -->
+<!--   	<artifactId>umms</artifactId> -->
+<!--   	<version>1.0.7</version> -->
+<!--   </parent> -->
 </project>
