@@ -7,9 +7,9 @@
     <relativePath>/umms/pom.xml</relativePath>
   </parent>
   <artifactId>ted</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3</version>
   <scm>
-  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/trunk/ted</developerConnection>
+  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/tags/ted-0.0.3</developerConnection>
   	<tag>https://svn.berlios.de/svnroot/repos/agilyze/bob/tags/ted</tag>
   </scm>
 </project>
