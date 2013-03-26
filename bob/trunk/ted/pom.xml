@@ -4,6 +4,7 @@
     <groupId>edu.umich.umms</groupId>
     <artifactId>umms</artifactId>
     <version>1.0.7</version>
+    <relativePath>../../umms/pom.xml</relativePath>
   </parent>
   <artifactId>ted</artifactId>
   <version>0.0.3-SNAPSHOT</version>
