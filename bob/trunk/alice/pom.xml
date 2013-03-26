@@ -8,4 +8,7 @@
   <artifactId>alice</artifactId>
   <packaging>pom</packaging>
   <version>0.0.4-SNAPSHOT</version>
+  <scm>
+  	<developerConnection>scm:svn:https://svn.berlios.de/svnroot/repos/agilyze/bob/trunk/alice</developerConnection>
+  </scm>
 </project>
