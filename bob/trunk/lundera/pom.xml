@@ -164,30 +164,30 @@
                     <mainClass>org.test.int1.Main</mainClass>
                 </configuration>
             </plugin>
-<!--              <plugin> -->
-<!--                 <groupId>org.jboss.as.plugins</groupId> -->
-<!--                 <artifactId>jboss-as-maven-plugin</artifactId> -->
-<!--                 <version>7.3.Final</version> -->
-<!--                 <configuration> -->
-<!--                 	<username>admin</username> -->
-<!--               		<password>admin1234</password> -->
-<!--                 </configuration> -->
-			<!--             </plugin> -->
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>jboss-maven-plugin</artifactId>
-					<version>1.5.0</version>
-					<configuration>
-						<jbossHome>/Users/pboisver/dev/jboss-6.1.0.Final</jbossHome>
-					<serverName>msis</serverName>
-<!-- 						<hostName>localhost</hostName> -->
-<!-- 						<port>8080</port> -->
-						<fileNames>
-							<fileName>${project.build.directory}/${project.build.finalName}.${project.packaging}</fileName>
-<!-- 							<fileName>${project.build.directory}/${project.build.finalName}</fileName> -->
-						</fileNames>
-					</configuration>
-				</plugin>
+			<plugin>
+				<groupId>org.jboss.as.plugins</groupId>
+				<artifactId>jboss-as-maven-plugin</artifactId>
+				<version>7.4.Final</version>
+				<configuration>
+					<username>admin</username>
+					<password>admin1234</password>
+				</configuration>
+			</plugin>
+<!-- 				<plugin> -->
+<!-- 					<groupId>org.codehaus.mojo</groupId> -->
+<!-- 					<artifactId>jboss-maven-plugin</artifactId> -->
+<!-- 					<version>1.5.0</version> -->
+<!-- 					<configuration> -->
+<!-- 						<jbossHome>/Users/pboisver/dev/jboss-6.1.0.Final</jbossHome> -->
+<!-- 					<serverName>msis</serverName> -->
+<!--  						<hostName>localhost</hostName> -->
+<!--  						<port>8080</port> -->
+<!-- 						<fileNames> -->
+<!-- 							<fileName>${project.build.directory}/${project.build.finalName}.${project.packaging}</fileName> -->
+<!--  							<fileName>${project.build.directory}/${project.build.finalName}</fileName> -->
+<!-- 						</fileNames> -->
+<!-- 					</configuration> -->
+<!-- 				</plugin> -->
            <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
